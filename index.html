@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Metodos de Ordenamiento</title>
+	<link href="bootstrap.css" rel="stylesheet" />
+	<script src="jquery.js"></script>
+	<script src="ordenamiento.js"></script>
+    </head>
+    <body style="padding-top: 1em">
+	<div class="container">
+	    <div class="row-fluid">
+		<div class="span12">
+		    Cantidad: <input type="text" id="cantidad" />
+		    <table class="table table-bordered table-hover table-striped">
+			<thead>
+			    <tr>
+				<th>ALGORITMO DE ORDENAMIENTO</th>
+				<th>TIEMPO DE RESPUESTA</th>
+				<th>RESULTADOS</th>
+			    </tr>
+			</thead>
+			<tbody>
+			    <tr>
+				<td>
+				    Ordenamiento de Burbuja
+				    <button class="btn btn-primary btn-mini" onclick="burbuja()">Ejecutar</button>
+				</td>
+				<td style="width: 15%">
+				    <div id="tiempo1"></div>
+				</td>
+				<td style="width: 50%" rowspan="5">
+				    <div id="mostrar" style="max-height: 450px; overflow-y:auto"></div>
+				</td>
+			    </tr>
+			    <tr>
+				<td>
+				    Ordenamiento de Burbuja Optimizada
+				    <button class="btn btn-primary btn-mini" onclick="burbuja_opt()">Ejecutar</button>
+				</td>
+				<td>
+				    <div id="tiempo4"></div>
+				</td>
+			    </tr>
+			    <tr>
+				<td>
+				    Ordenamiento por Selección
+				    <button class="btn btn-primary btn-mini" onclick="seleccion()">Ejecutar</button>
+				</td>
+				<td>
+				    <div id="tiempo2"></div>
+				</td>
+			    </tr>
+			    <tr>
+				<td>
+				    Ordenamiento por Inserción
+				    <button class="btn btn-primary btn-mini" onclick="insercion()">Ejecutar</button>
+				</td>
+				<td>
+				    <div id="tiempo3"></div>
+				</td>
+			    </tr>
+			    <tr>
+				<td>
+				    Quicksort
+				    <button class="btn btn-primary btn-mini" onclick="rapido()">Ejecutar</button>
+				</td>
+				<td>
+				    <div id="tiempo5"></div>
+				</td>
+			    </tr>
+			</tbody>
+		    </table>
+		</div>
+	    </div>
+	</div>
+    </body>
+</html>
