@@ -1,4 +1,4 @@
-metodos_ordenamiento
+Metodos de Ordenamiento
 ====================
 
 Una tabla con metodos de ordenamiento, diseñado con Bootstrap y elaborado con Jquery.
